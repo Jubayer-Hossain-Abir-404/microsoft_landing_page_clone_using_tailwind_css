@@ -15,47 +15,51 @@
             <div class="line h-0.5 w-6 my-1 bg-black"></div>
             <div class="line h-0.5 w-6 my-1 bg-black"></div>
         </div>
-        <div class="search md:hidden">
-            SearchIcon
+        <div class="search md:hidden w-4 mr-6">
+            <img src="../assets/search.svg" alt="">
         </div>
       </div>
       
       <div class="logo text-center flex md:order-1">
-        <div class="p-4 w-48">
-          <img src="../assets/mslogo.png" alt="">
+        <div class="p-4 flex justify-center">
+          <img class="w-[50%]" src="../assets/mslogo.png" alt="">
         </div>
         <!-- space-x-1 it gives one space in x  -->
         <!-- gives 2 space in margin right and margin left -->
         <!-- inset 0 top 0 right 0 bottom 0 left 0 -->
         <!-- here translate 96 will take content position in the back -96 -->
-        <div class="features absolute w-fit md:static md:w-auto bg-gray-200 md:bg-white inset-0 md:flex md:mx-4 md:space-x-2 -translate-x-96 md:translate-x-0">
-          <div class="fitem">
+        <div class="features absolute w-fit md:items-center md:static md:w-auto bg-gray-200 md:bg-white inset-0 md:flex md:mx-4 md:space-x-6 -translate-x-96 md:translate-x-0">
+          <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer">
             Microsoft 365
           </div>
-          <div class="fitem">
+          <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer">
             Office
           </div>
-          <div class="fitem">
+          <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer">
             Windows
           </div>
-          <div class="fitem">
+          <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer">
             Surface
           </div>
-          <div class="fitem">
+          <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer">
             Xbox
           </div>
-          <div class="fitem">
+          <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer">
             Support
           </div>
         </div>
       </div>
       <div class="cart text-center md:order-3 flex">
-        <div class="search hidden md:block">
+        <div class="search hidden md:block mr-6">
             All Microsoft
-            SearchIcon
         </div>
-        <div>
-          Cart Account
+        <div class="mx-2">
+          Search
+        </div>
+        <img class="w-4 mr-6 hidden md:block" src="../assets/search.svg" alt="">
+        <div class="flex">
+          <img class="w-4 mt-1 h-4 mr-4" src="../assets/cart_icon.svg" alt="">
+          <img class="w-4 mt-1 h-4 mr-4" src="../assets/account_icon.svg" alt="">
         </div>
       </div>
   </div>
@@ -66,8 +70,9 @@
   <!-- flex-col-reverse to position flex items vertically in the opposite direction -->
   <!-- flex-row to position flex items horizontally in the same direction as text -->
   <!-- third bracket need to be used to use raw css -->
+  <!-- start of slider -->
   <div class="slider flex flex-col-reverse md:flex-row bg-[#F3F3F3] mx-4">
-    <div class="left flex flex-col justify-center items-center md:items-baseline py-12">
+    <div class="left flex flex-col justify-center items-center md:items-baseline py-12 ml-32 space-y-5">
       <h1 class="text-2xl font-medium md:text-4xl mx-5">Surface Laptop 4</h1>
       <!-- here width is 3/4 meaning 75% -->
       <p class="w-3/4 mx-5 text-center md:text-left">Do it all with a perfect balance of sleek, ultra-thin design, multitasking speed and improved performance</p>
@@ -75,6 +80,28 @@
     </div>
     <div class="right">
       <img class="w-auto md:w-[64rem]" src="../assets/ms.webp" alt="">
+    </div>
+  </div>
+  <!-- end of slider -->
+  <div class="promo space-y-6 md:flex flex-row justify-center">
+    <!-- justify center makes the whole item in the center
+    align items center makes both the item center
+    in each other's perspective -->
+    <div class="item flex md:flex-col items-center mx-4 mt-6 space-x-2">
+      <img src="../assets/ic1.png" alt="">
+      <span class="font-medium md:w-[8rem] md:text-center text-sm my-4">Choose your Microsoft 365</span>
+    </div>
+    <div class="item flex md:flex-col items-center mx-4 space-x-2">
+      <img src="../assets/ic2.webp" alt="">
+      <span class="font-medium w-[8rem] text-center text-sm my-4">Explore Surface Devices</span>
+    </div>
+    <div class="item flex md:flex-col items-center mx-4 space-x-2">
+      <img src="../assets/ic3.webp" alt="">
+      <span class="font-medium md:w-[8rem] md:text-center text-sm my-4">Buy Xbox games</span>
+    </div>
+    <div class="item flex md:flex-col items-center mx-4 space-x-2">
+      <img src="../assets/ic4.png" alt="">
+      <span class="font-medium md:w-[8rem] md:text-center text-sm my-4">Get Windows 11</span>
     </div>
   </div>
 </body>
